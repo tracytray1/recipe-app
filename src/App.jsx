@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import Card from './components/Card/Card'
+import CardList from './components/CardList/CardList'
 
 
 const App = () => {
@@ -9,19 +9,17 @@ const App = () => {
   useEffect(() => {
     fetch('https://dummyjson.com/recipes')
       .then((response) => response.json())
-      .then((data) =>
-        setRecipes(data.recipes))
-        console.log(recipes);
-  }, []);
-/*
+      .then((data) => {
+        setRecipes(data.recipes);
+  })}, []);
+
+
   return (
     <>
-      <h1>Hello World</h1>
-      {recipes.map(({name}) =>
-        <Card name={name}/>
-      )}
+      <h2>Recipes of the day</h2>
+      <CardList recipes = {recipes} />
     </>
-  )*/
+  )
 }
 
 export default App
