@@ -1,11 +1,13 @@
 import './Card.css';
 
-const Card = ({ name, image }) => {
+const Card = ({ name, image, prepTime }) => {
   return (
-    <div className="card-container">
-      <h2>{name}</h2>
-      <img src={image} alt={name} width="200" />
-      <p>View recipe</p>
+    <div className='card-container'>
+      <img src={image} alt={name} width='250' />
+      <div className="recipe-content">
+        <p className='recipe-title'>{name}</p>
+        <p className='prep-time'><i className="fa-solid fa-clock"></i> { prepTime } mins</p>
+      </div>
     </div>
   )
 }

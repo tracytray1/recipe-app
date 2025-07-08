@@ -1,4 +1,69 @@
+@import url("https://use.typekit.net/hbe5seg.css");
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
 #root {
-  max-width: 1280px;
   margin: 0;
+  width: 100%;
+}
+
+* {
+  color:#337179;
+  box-sizing: border-box;
+}
+
+.app-container {
+  width: 100%;
+}
+
+
+.app-banner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)), url('https://images.pexels.com/photos/691114/pexels-photo-691114.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.banner-title {
+  font-family: "Delicious Handrawn", cursive;
+  font-weight: 400;
+  font-style: normal;
+  align-items: center;
+  color: white;
+  font-size: 100px;
+}
+
+.banner-subtitle {
+  font-family: poppins, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.1em;
+  line-height: 1.1;
+  color: white;
+  text-transform: uppercase;
+  align-items: end;
+}
+
+@media screen and (max-width: 1040px) {
+  .app-banner {
+    min-height: 400px;
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .app-banner {
+    min-height: 300px;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .banner-title {
+    font-size: 1.5rem;
+  }
 }

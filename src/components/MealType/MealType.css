@@ -1,0 +1,25 @@
+.mealtype-container{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.mealtype-label{
+  text-align: center;
+}
+
+.mealtype-image{
+  border-radius: 50%;
+  object-fit: cover;
+  height: 100px;
+  width: 100px;
+}
+
+.mealtype-image:hover {
+  cursor: pointer;
+}
+
+.mealtype-button {
+  border: none;
+  background-color: white;
+}

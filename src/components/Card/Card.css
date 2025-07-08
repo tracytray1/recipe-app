@@ -1,10 +1,10 @@
 .card-container {
   display: flex;
   flex-direction: column;
-  background-color: whitesmoke;
+  align-items: center;
+  background-color: rgba(245, 245, 245, 0.436);
   border-radius: 10px;
   padding: 25px;
-  margin: 10px;
   cursor: pointer;
   -moz-osx-font-smoothing: grayscale;
   backface-visibility: hidden;
@@ -14,5 +14,17 @@
 }
 
 .card-container:hover {
-  transform: scale(1.01);
+  transform: scale(1.02);
+}
+
+.prep-time {
+  font-size: medium;
+}
+
+.recipe-title {
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 18px;
 }
