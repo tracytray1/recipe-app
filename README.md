@@ -35,14 +35,14 @@ cd cooksy`
 2.  Install dependencies:
 
 `npm install
-# or
+or
 yarn install`
 
 3.  Start the development server:
 
 
 `npm start
-# or
+or
 yarn start`
 
 The app should now be running at <http://localhost:3000>
