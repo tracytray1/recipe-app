@@ -57,17 +57,6 @@ yarn start`
 
 -   DummyJSON API
 
-📁 Project Structure
---------------------
-
-`src/
-├── components/
-│   ├── CardList/
-│   ├── MealType/
-│   └── SearchBox/
-├── App.css
-├── App.jsx
-└── index.js`
 
 ✅ Future Improvements
 ---------------------
