@@ -45,7 +45,6 @@ yarn install`
 or
 yarn start`
 
-The app should now be running at <http://localhost:3000>
 
 🛠️ Technologies Used
 ---------------------
@@ -63,7 +62,6 @@ The app should now be running at <http://localhost:3000>
 
 `src/
 ├── components/
-│   ├── Card/
 │   ├── CardList/
 │   ├── MealType/
 │   └── SearchBox/
