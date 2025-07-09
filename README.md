@@ -1,12 +1,80 @@
-# React + Vite
+Cooksy - React Recipe App
+Cooksy is a modern and responsive recipe web application built with React. It allows users to browse, search, and filter recipes by meal type — such as breakfast, lunch, and dinner — using a clean and intuitive interface.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Features
+🔍 Search Recipes by name in real time
 
-Currently, two official plugins are available:
+🍳 Filter by Meal Type (Breakfast, Lunch, Dinner, All)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🖼️ Clean, responsive UI with circular meal type icons
 
-## Expanding the ESLint configuration
+🌐 Fetches recipe data from DummyJSON Recipes API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+⚛️ Built with React functional components and Hooks
+
+📸 Preview
+<!-- Replace with an actual screenshot or GIF if available -->
+
+🚀 Getting Started
+These instructions will help you set up and run the project locally.
+
+Prerequisites
+Node.js (v14+)
+
+npm or yarn
+
+Installation
+Clone the repository:
+
+bash
+Copier
+Modifier
+git clone https://github.com/your-username/cooksy.git
+cd cooksy
+Install dependencies:
+
+bash
+Copier
+Modifier
+npm install
+# or
+yarn install
+Start the development server:
+
+bash
+Copier
+Modifier
+npm start
+# or
+yarn start
+The app should now be running at http://localhost:3000
+
+🛠️ Technologies Used
+React (with Hooks)
+
+CSS (custom styling)
+
+JavaScript (ES6+)
+
+DummyJSON API
+
+📁 Project Structure
+css
+Copier
+Modifier
+src/
+├── components/
+│   ├── CardList/
+│   ├── MealType/
+│   └── SearchBox/
+├── App.css
+├── App.jsx
+└── index.js
+✅ Future Improvements
+Add recipe detail view
+
+Pagination or lazy loading
+
+User favorites/bookmarks
+
+Dark mode toggle
