@@ -1,25 +1,28 @@
 .mealtype-container{
   display: flex;
-  gap: 30px;
+  gap: 50px;
   justify-content: center;
+  padding-top: 20px;
 }
 
 .mealtype-label{
   text-align: center;
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
 .mealtype-image{
   border-radius: 50%;
   object-fit: cover;
-  height: 100px;
-  width: 100px;
-}
-
-.mealtype-image:hover {
-  cursor: pointer;
+  height: 150px;
+  width: 150px;
 }
 
 .mealtype-button {
   border: none;
   background-color: white;
+  cursor: pointer;
 }

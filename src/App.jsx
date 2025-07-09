@@ -1,9 +1,8 @@
-import { useState, useEffect } from 'react'
-import './App.css'
-import CardList from './components/CardList/CardList'
-import SearchBox from './components/SearchBox/Searchbox'
-import MealType from './components/MealType/MealType'
-
+import { useState, useEffect } from 'react';
+import './App.css';
+import CardList from './components/CardList/CardList';
+import SearchBox from './components/SearchBox/Searchbox';
+import MealType from './components/MealType/MealType';
 
 const App = () => {
   const [recipes, setRecipes] = useState([]);
@@ -13,9 +12,14 @@ const App = () => {
     fetch('https://dummyjson.com/recipes')
       .then((response) => response.json())
       .then((data) => {
+        console.log('API Data:', data.recipes[0]);
         setRecipes(data.recipes);
         setFilteredRecipes(data.recipes);
-  })}, []);
+      })
+      .catch((error) => {
+        console.error('Error fetching recipes:', error);
+      });
+  }, []);
 
   const handleChange = (event) => {
     const searchString = event.target.value.toLowerCase();
@@ -23,27 +27,30 @@ const App = () => {
       recipe.name.toLowerCase().includes(searchString)
     );
     setFilteredRecipes(newFilteredRecipes);
-  }
+  };
 
   const onClickMeal = (event) => {
-    const meal = event.target.id;
+    const meal = event.currentTarget.id;
+    console.log('Clicked meal:', meal);
     if (meal === 'all') {
       setFilteredRecipes(recipes);
     } else {
-    const filtered = recipes.filter((recipe) =>
-      recipe.mealType.some(type => type.toLowerCase() === meal.toLowerCase())
-    );
+      const filtered = recipes.filter((recipe) =>
+        recipe.mealType[0].toLowerCase() === meal.toLowerCase()
+      );
       setFilteredRecipes(filtered);
-    };
-  }
+    }
+  };
 
   return (
     <div className="app-container">
       <div className="app-banner">
-        <h1 className="banner-title"> Cooksy </h1>
-        <h2 className="banner-subtitle"> Explore our selection of <br/> recipes </h2>
+        <h1 className="banner-title">Cooksy</h1>
+        <h2 className="banner-subtitle">
+          Explore our selection of <br /> recipes
+        </h2>
       </div>
-      <SearchBox onSearchChange={handleChange}/>
+      <SearchBox onSearchChange={handleChange} />
       <MealType onClickMeal={onClickMeal} />
       {filteredRecipes.length === 0 ? (
         <p className="no-results">No recipe found.</p>
@@ -51,7 +58,7 @@ const App = () => {
         <CardList recipes={filteredRecipes} />
       )}
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
