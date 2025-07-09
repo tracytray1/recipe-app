@@ -1,80 +1,89 @@
 Cooksy - React Recipe App
-Cooksy is a modern and responsive recipe web application built with React. It allows users to browse, search, and filter recipes by meal type — such as breakfast, lunch, and dinner — using a clean and intuitive interface.
+=========================
+
+**Cooksy** is a recipe web application built with **React**. It allows users to browse, search, and filter recipes by meal and type.
 
 ✨ Features
-🔍 Search Recipes by name in real time
+----------
 
-🍳 Filter by Meal Type (Breakfast, Lunch, Dinner, All)
+-   **Search Recipes** by name and instant filter of the meals list
 
-🖼️ Clean, responsive UI with circular meal type icons
+-   **Filter by Meal Type** (Breakfast, Lunch, Dinner, All)
 
-🌐 Fetches recipe data from DummyJSON Recipes API
+-   Clean, responsive UI with circular meal type icons
 
-⚛️ Built with React functional components and Hooks
+-   Fetches recipe data from DummyJSON Recipes API
+
+-   Built with React functional components and Hooks
 
 📸 Preview
+----------
+
 <!-- Replace with an actual screenshot or GIF if available -->
 
 🚀 Getting Started
-These instructions will help you set up and run the project locally.
+------------------
 
-Prerequisites
-Node.js (v14+)
+### Installation
 
-npm or yarn
+1.  Clone the repository:
 
-Installation
-Clone the repository:
 
-bash
-Copier
-Modifier
-git clone https://github.com/your-username/cooksy.git
-cd cooksy
-Install dependencies:
+`git clone https://github.com/your-username/cooksy.git
+cd cooksy`
 
-bash
-Copier
-Modifier
-npm install
+2.  Install dependencies:
+
+`npm install
 # or
-yarn install
-Start the development server:
+yarn install`
 
-bash
-Copier
-Modifier
-npm start
+3.  Start the development server:
+
+
+`npm start
 # or
-yarn start
-The app should now be running at http://localhost:3000
+yarn start`
+
+The app should now be running at <http://localhost:3000>
 
 🛠️ Technologies Used
-React (with Hooks)
+---------------------
 
-CSS (custom styling)
+-   React (with Hooks)
 
-JavaScript (ES6+)
+-   CSS (custom styling)
 
-DummyJSON API
+-   JavaScript (ES6+)
+
+-   DummyJSON API
 
 📁 Project Structure
-css
-Copier
-Modifier
-src/
+--------------------
+
+`src/
 ├── components/
+│   ├── Card/
 │   ├── CardList/
 │   ├── MealType/
 │   └── SearchBox/
 ├── App.css
 ├── App.jsx
-└── index.js
+└── index.js`
+
 ✅ Future Improvements
-Add recipe detail view
+---------------------
 
-Pagination or lazy loading
+-   Add recipe detail view
 
-User favorites/bookmarks
+-   User favorites/bookmarks
 
-Dark mode toggle
+📄 License
+----------
+
+This project is open-source and available under the MIT License.
+
+🙌 Acknowledgements
+-------------------
+
+-   [DummyJSON API](https://dummyjson.com/)
