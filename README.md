@@ -18,8 +18,7 @@ Cooksy - React Recipe App
 
 📸 Preview
 ----------
-
-<!-- Replace with an actual screenshot or GIF if available -->
+<img width="1877" height="927" alt="cooksy" src="https://github.com/user-attachments/assets/bdb12d39-c467-4f02-afac-18b9d6beefed" />
 
 🚀 Getting Started
 ------------------
