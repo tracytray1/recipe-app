@@ -64,13 +64,3 @@ yarn start`
 -   Add recipe detail view
 
 -   User favorites/bookmarks
-
-📄 License
-----------
-
-This project is open-source and available under the MIT License.
-
-🙌 Acknowledgements
--------------------
-
--   [DummyJSON API](https://dummyjson.com/)
